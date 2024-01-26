@@ -18,7 +18,6 @@ public class UsersController {
     @Autowired
     private UsersService usersService;
 
-
     @GetMapping("")
     public List<UserResponseDTO> getUsers() {
         List<User> userList = usersService.getAllUsers();
@@ -44,15 +43,10 @@ public class UsersController {
                 user.getRole());
     }
 
-
-
     @DeleteMapping("/{userId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteUser(@PathVariable UUID userId) {
         usersService.deleteUser(userId);
     }
-
-
-
 
 }

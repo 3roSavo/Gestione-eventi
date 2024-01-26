@@ -30,7 +30,7 @@ public class AuthController {
 	public UserResponseDTO createUser(@RequestBody @Validated NewUserDTO userDTO, BindingResult validation) {
 		if (validation.hasErrors()) {
 			System.out.println(validation.getAllErrors());
-			throw new BadRequestException("Ci sono errori nel payload!");
+			throw new BadRequestException("Ci sono errori nel payload!!!");
 		} else {
 			User user = authService.saveUser(userDTO);
 			return new UserResponseDTO(
