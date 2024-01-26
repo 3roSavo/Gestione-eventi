@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Escludiamo env.properties ###
+env.properties
