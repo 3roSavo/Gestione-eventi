@@ -38,5 +38,11 @@ public class Event {
     private List<Reservation> reservationList;
 
 
-
+    public Event(String title, String description, LocalDate date, String location, int seatsAvailable) {
+        this.title = title;
+        this.description = description;
+        this.date = date;
+        this.location = location;
+        this.seatsAvailable = seatsAvailable;
+    }
 }
