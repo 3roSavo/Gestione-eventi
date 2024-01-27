@@ -28,7 +28,7 @@ public class Event {
 
     private String description;
 
-    private LocalDate date;
+    private String date;
 
     private String location;
 
@@ -38,7 +38,7 @@ public class Event {
     private List<Reservation> reservationList;
 
 
-    public Event(String title, String description, LocalDate date, String location, int seatsAvailable) {
+    public Event(String title, String description, String date, String location, int seatsAvailable) {
         this.title = title;
         this.description = description;
         this.date = date;

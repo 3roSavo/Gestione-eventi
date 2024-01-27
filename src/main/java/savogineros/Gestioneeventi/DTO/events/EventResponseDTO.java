@@ -7,7 +7,7 @@ public record EventResponseDTO(
         UUID id,
         String title,
         String description,
-        LocalDate date,
+        String date,
         String location,
         int seatsAvailable) {
 }
